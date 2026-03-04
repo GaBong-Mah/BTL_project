@@ -1,0 +1,18 @@
+# Thư viện của Node.js (Cực kỳ nặng, không được up)
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Các file môi trường/mật khẩu (Bảo mật)
+.env
+
+# Thư mục chứa sản phẩm sau khi build (Nếu có)
+dist/
+build/
+
+# Các file rác của hệ điều hành
+.DS_Store
+Thumbs.db
+
+# Các file log lỗi khi chạy npm
+npm-debug.log*
