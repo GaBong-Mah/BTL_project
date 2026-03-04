@@ -35,3 +35,29 @@
 3. Cài đặt thư viện: `npm install`
 4. Khởi động giao diện: `npm run dev`
 5. Truy cập vào đường dẫn `http://localhost:5173` để sử dụng ứng dụng.
+
+erDiagram
+    USERS ||--o{ TRANSACTIONS : "makes"
+    CATEGORIES ||--o{ TRANSACTIONS : "categorizes"
+
+    USERS {
+        int id PK
+        string username
+        string password
+        string email
+    }
+
+    CATEGORIES {
+        int id PK
+        string name
+        string type
+    }
+
+    TRANSACTIONS {
+        int id PK
+        int user_id FK
+        int category_id FK
+        decimal amount
+        date transaction_date
+        string note
+    }
